@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Sanjita's Profile!"
 date:   2017-02-23 08:22:17 -0500
 categories: jekyll update
 ---
