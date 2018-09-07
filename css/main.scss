@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: 'Lato';
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -23,12 +23,20 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1100px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
+.img-circle {
+  border-radius: 50%;
 
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -43,7 +51,9 @@ $on-laptop:        800px;
     }
 }
 
-
+body {
+  font-family: 'Lato';
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -51,3 +61,249 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+// cv page
+.cv {
+  *, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .flexAndWrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .blackFont {
+    color: #131313;
+  }
+  .lightGreyFont {
+    color: #635c5c;
+  }
+  .whiteFont {
+    color: #fff;
+  }
+  .marginL15 {
+    margin-left: 15px;
+  }
+  .headingUnderLine {
+    margin-bottom: 25px;
+    width: 100%;
+
+  }
+  .headingUnderLine:after {
+    content: '';
+    display: block;
+    flex: 1;
+    height: 2px;
+    background-color: #9c9c9c;
+    margin-top: 10px;
+  }
+  .mainBodyContainer {
+    display: flex;
+    /*padding: 50px;*/
+    /*flex-wrap: wrap;*/
+  }
+  #content {
+    /*margin: 50px;*/
+  }
+  .pinkBody {
+    background-color: black;
+    font-family: 'Lato';
+  }
+  .pinkMainContent {
+    margin: 50px 125px;
+  }
+  .nameSection {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+  }
+  .nameText {
+    margin: 0;
+    font-size: 45px;
+    letter-spacing: 5.5px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .professionText {
+    letter-spacing: 5.5px;
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  /*LEFT*/
+  .leftSection {
+    background-color: #f2d2d2;
+    padding: 0px;
+  }
+  .bioAllInfo {
+    padding: 40px;
+  }
+
+  .infoInner:not(:last-child) {
+      margin-bottom: 50px;
+      margin-top: 50px;
+  }
+  .profileImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profileImage {
+    /*border-radius: 50%;*/
+    width: 200px;
+  }
+
+  .leftSideHeaderFont {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .leftSideNormalFont {
+    font-size: 15px;
+  }
+
+  .infoIconContainer {
+      display: flex;
+      /* justify-content: center; */
+      /*align-items: center;*/
+      margin-bottom: 15px;
+      /*padding-right: 25px;*/
+
+  }
+  .smallWhiteCircle {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  .rightSide {
+      padding: 0px;
+      background-color: #fff;
+  }
+  .rideSideInner {
+    padding: 40px 0px 40px 40px;
+  }
+  .rightSideHeaderFont {
+    font-size: 22px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+  }
+  .smallBoldFont {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .rightInner {
+    padding-right: 40px;
+    padding-bottom: 30px;
+  }
+  .rightSIdeInnerFlex {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .rightNormalText {
+    font-size: 15px;
+    text-align: justify;
+  }
+  .innerFlexRight {
+    padding-left: 35px;
+    flex: 1;
+  }
+  .eachListWrapper {
+    width: 90px;
+  }
+  .ulList {
+    padding-left: 15px;
+  }
+
+  .losange, .losange div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+  }
+
+  .losange {
+    transform: rotate(45deg) translateY(10px);
+  }
+
+  .losange .los1 {
+    width: 355px;
+    height: 355px;
+    transform: rotate(-45deg) translateY(-74px);
+  }
+
+  .professionalSkillsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .progress {
+    height: 9px;
+    margin-bottom: 0px;
+    flex: 1;
+    border-radius: 4px;
+    /*margin-left: 15px;*/
+    background-color: #5A5A5A;
+  }
+
+  .progress-bar {
+    background-color: #f2d2d2;
+  }
+
+  .losange .los1 img {
+    width: 100%;
+    height: auto;
+  }
+  // .backgroundProfile {
+  //   width: 235px;
+  //   background-image: url('../img/Sanjita.jpg');
+  //   border-radius: 50%;
+  //   height: 235px;
+  //   background-position: center;
+  //   background-size: contain;
+  // }
+  .personalSkillsBar {
+    background-color: #fff;
+  }
+  .downloadButton {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 30px;
+    padding: 3px 7px;
+    border-radius: 3px;
+  }
+
+  @media (max-width: 991px) {
+    .nameText {
+      font-size: 37px;
+    }
+    .professionText {
+      font-size: 15px;
+    }
+    .iconCircle {
+      width: 30px;
+      height: 30px;
+    }
+    .pinkMainContent {
+      margin: 10px;
+
+    }
+
+}
+}

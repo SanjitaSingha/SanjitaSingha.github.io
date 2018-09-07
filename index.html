@@ -1,23 +1,26 @@
 ---
 layout: default
+<!-- title: M Sanjita Singha -->
+cv: passive
+notes: passive
+contact: passive
+description: M Sanjita Singha is a Web & Mobile App Developer.
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<!-- <div class="jumbotron"> -->
+<div class="row marketing">
+	<div class="col-sm-4">
+	<img  class="img-circle avatar" alt="Sanjita Singha" src="img/Sanjita.jpg">
+	</div>
+	<div itemscope itemtype="http://data-vocabulary.org/Person" class="col-sm-8">
+	<p class="lead">
+		Hello there! My name is <span itemprop="name">M Sanjita Singha</span> and I'm a <span itemprop="title">Web & Mobile App Developer</span>
+		living in
+		<span itemprop="address" itemscope
+	    itemtype="http://data-vocabulary.org/Address"> <span itemprop="locality">Guwahati</span>, <span itemprop="region">Assam</span>
+		</span>
+	</p>
+	<p>Feel free to checkout my work or view my resume I am currently available for hire. So If I sound fit for you next project don't hesistate to <a href="contact">contact me</a></p>
+	<p>I get by as a <span itemprop="title">Web developer(Front-end) & Mobile App Developer(React-Native)</span> and  and working for <a href="https://quadtrust.com/">Quadtrust</a> at <span itemprop="affiliation">the <a href="https://en.wikipedia.org/wiki/Guwahati">Guwahati</a></span>.</p>
+	</div>
 </div>
+<!-- </div> -->
